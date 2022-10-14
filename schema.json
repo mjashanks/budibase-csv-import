@@ -1,0 +1,84 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "csv-import",
+    "friendlyName": "CSV Import",
+    "description": "Allows your end users to import a CSV and post the results to a table",
+    "icon": "FileData",
+    "hasChildren": true,
+    "settings": [
+      {
+        "type": "table",
+        "key": "table",
+        "label": "Table"
+      },
+      {
+        "type": "event",
+        "key": "onImport",
+        "label": "on Import"
+      },
+      {
+        "type": "text",
+        "key": "importText",
+        "label": "Import button text",
+        "defaultValue":"Import"
+      },
+      {
+        "type": "text",
+        "key": "resetText",
+        "label": "Reset button text",
+        "defaultValue":"Reset"
+      },
+      {
+        "type": "text",
+        "key": "copyErrorText",
+        "label": "Copy errors text",
+        "defaultValue":"Copy errors"
+      },
+      {
+        "type": "text",
+        "key": "dragzoneText",
+        "label": "Dragzone text",
+        "defaultValue":"Drag 'n' drop some files here, or click to select files"
+      }
+    ],
+    "context": {
+      "type": "static",
+      "values": [
+        {
+          "key":"data",
+          "label": "Transformed data"
+        },
+        {
+          "key":"importErrors",
+          "label":"Import errors"
+        },
+        {
+          "key":"parseErrors",
+          "label":"Import errors"
+        },
+        {
+          "key":"file",
+          "label":"Import File"
+        },
+        {
+          "key":"isParsed",
+          "label":"Is Parsed"
+        },
+        {
+          "key":"isImporting",
+          "label":"Is Parsed"
+        },
+        {
+          "key":"isImported",
+          "label":"Is Imported"
+        },
+        {
+          "key":"importedCount",
+          "label":"Rows imported"
+        }
+      ]
+    }
+  }
+}
