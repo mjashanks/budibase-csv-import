@@ -1,6 +1,8 @@
 {
   "type": "component",
-  "metadata": {},
+  "metadata": {
+    "svelteMajor": 5
+  },
   "schema": {
     "name": "csv-import",
     "friendlyName": "CSV Import",
@@ -22,61 +24,61 @@
         "type": "text",
         "key": "importText",
         "label": "Import button text",
-        "defaultValue":"Import"
+        "defaultValue": "Import"
       },
       {
         "type": "text",
         "key": "resetText",
         "label": "Reset button text",
-        "defaultValue":"Reset"
+        "defaultValue": "Reset"
       },
       {
         "type": "text",
         "key": "copyErrorText",
         "label": "Copy errors text",
-        "defaultValue":"Copy errors"
+        "defaultValue": "Copy errors"
       },
       {
         "type": "text",
         "key": "dragzoneText",
         "label": "Dragzone text",
-        "defaultValue":"Drag 'n' drop some files here, or click to select files"
+        "defaultValue": "Drag 'n' drop some files here, or click to select files"
       }
     ],
     "context": {
       "type": "static",
       "values": [
         {
-          "key":"data",
+          "key": "data",
           "label": "Transformed data"
         },
         {
-          "key":"importErrors",
-          "label":"Import errors"
+          "key": "importErrors",
+          "label": "Import errors"
         },
         {
-          "key":"parseErrors",
-          "label":"Import errors"
+          "key": "parseErrors",
+          "label": "Import errors"
         },
         {
-          "key":"file",
-          "label":"Import File"
+          "key": "file",
+          "label": "Import File"
         },
         {
-          "key":"isParsed",
-          "label":"Is Parsed"
+          "key": "isParsed",
+          "label": "Is Parsed"
         },
         {
-          "key":"isImporting",
-          "label":"Is Parsed"
+          "key": "isImporting",
+          "label": "Is Parsed"
         },
         {
-          "key":"isImported",
-          "label":"Is Imported"
+          "key": "isImported",
+          "label": "Is Imported"
         },
         {
-          "key":"importedCount",
-          "label":"Rows imported"
+          "key": "importedCount",
+          "label": "Rows imported"
         }
       ]
     }
